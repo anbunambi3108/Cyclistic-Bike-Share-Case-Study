@@ -1,7 +1,3 @@
-Here you go — clean, ready-to-paste README.md content in plain markdown.
-
----
-
 # Cyclistic Bike-Share: Google Data Analytics Case Study
 
 ## Business Task
