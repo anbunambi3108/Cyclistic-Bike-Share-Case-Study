@@ -6,8 +6,7 @@ Increase annual memberships by converting casual riders based on how they use th
 
 ## Data
 
-Divvy Tripdata from Oct 2024 to Sept 2025.
-Rides shorter than 1 minute, longer than 24 hours, or missing station fields were removed.
+Divvy Tripdata from Oct 2024 to Sept 2025
 
 ## Process
 
@@ -26,25 +25,11 @@ Rides shorter than 1 minute, longer than 24 hours, or missing station fields wer
 
 ## Strategic Recommendations
 
-### 1. Time-Based Membership Tiers
-
-Create flexible passes: a commuter-focused peak-hour plan and a weekend leisure pass priced for long, casual trips.
-
-### 2. High-Value Conversion Promotions
-
-Run seasonal conversion pushes like a Summer Pass or holiday bundles that roll into discounted annual memberships.
-
-### 3. Destination-Based Incentives
-
-Partner with attractions, restaurants, and entertainment spots near top casual-rider stations to encourage on-site membership sign-ups.
-
-### 4. Duration-Incentive Messaging
-
-Speak directly to long-trip casual riders: highlight how members avoid high per-minute fees. Offer reduced pricing for member trips over 30 minutes to reinforce loyalty.
-
-### 5. Geographic and Inventory Optimization
-
-Shift bikes toward leisure hotspots on weekends and holidays. Reinforce commuter routes during weekday peaks to keep both groups satisfied.
+1. Create flexible passes: a commuter-focused peak-hour plan and a weekend leisure pass priced for long, casual trips.
+2. High-Value Conversion Promotions : Run seasonal conversion pushes like a Summer Pass or holiday bundles that roll into discounted annual memberships.
+3. Destination-Based Incentives : Partner with attractions, restaurants, and entertainment spots near top casual-rider stations to encourage on-site membership sign-ups.
+4. Duration-Incentive Messaging : Speak directly to long-trip casual riders: highlight how members avoid high per-minute fees. Offer reduced pricing for member trips over 30 minutes to reinforce loyalty.
+5. Geographic and Inventory Optimization : Shift bikes toward leisure hotspots on weekends and holidays. Reinforce commuter routes during weekday peaks to keep both groups satisfied.
 
 ## Actions
 
