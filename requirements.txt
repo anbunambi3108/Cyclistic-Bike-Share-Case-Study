@@ -5,3 +5,7 @@ numpy
 matplotlib
 seaborn
 scikit-learn
+requests
+folium
+streamlit-folium
+pyarrow
