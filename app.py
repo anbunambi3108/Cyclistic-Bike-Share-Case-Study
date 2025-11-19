@@ -1,3 +1,4 @@
+import os 
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -63,6 +64,10 @@ def load_data():
     try:
         # NOTE: Assumes 'Data/12_Months_data/combined_cyclistic_data.parquet' exists.
         data_path = "Data/12_Months_data/combined_cyclistic_data.parquet"
+        # Explicit existence check
+        if not os.path.exists(data_path):
+            st.error(f"❌ Parquet file not found at: {data_path}")
+            return None
         df = pd.read_parquet(data_path)
         
         # Ensure datetime columns are properly formatted
@@ -268,13 +273,27 @@ CUSTOM_LEGEND_HTML = """
 # ============================================================================
 # MAIN APPLICATION
 # ============================================================================
-def main():
-    # Load data
-    df = load_data()
+# def main():
+#     # Load data
+#     df = load_data()
     
+#     if df is None:
+#         st.stop()
+def main():
+    # Debug info
+    st.write("Current working directory:", os.getcwd())
+    st.write("Contents of Data/12_Months_data (if it exists):")
+
+    if os.path.exists("Data/12_Months_data"):
+        st.write(os.listdir("Data/12_Months_data"))
+    else:
+        st.write("Data/12_Months_data does NOT exist")
+
+    df = load_data()
+
     if df is None:
         st.stop()
-    
+
     # ========================================================================
     # SIDEBAR FILTERS
     # ========================================================================
@@ -830,4 +849,9 @@ def main():
 # RUN APPLICATION
 # ============================================================================
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        # This ensures the app doesn't hard-crash on startup
+        st.error(f"🚨 Unhandled error in app: {e}")
+        st.exception(e)
