@@ -1,42 +1,125 @@
-# Cyclistic Bike-Share: Google Data Analytics Case Study
+# 🚲 Cyclistic Bike Share Analysis
 
-## Business Task
+Data driven membership conversion strategy using rider behavior analysis
 
-Increase annual memberships by converting casual riders based on how they use the system.
+A comprehensive data analytics case study analyzing Cyclistic bike share usage patterns to identify how casual riders differ from members and how those differences can be used to increase annual memberships.
 
-## Data
+## 📌 Overview
 
-Divvy Tripdata from Oct 2024 to Sept 2025
+Cyclistic aims to grow annual memberships by converting casual riders. This project analyzes one year of Divvy Tripdata from October 2024 through September 2025 to understand how members and casual riders use the system differently. By examining trip duration, timing, geography, and seasonal behavior, the analysis surfaces actionable insights that inform pricing, promotions, and operational decisions designed to drive membership conversion.
 
-## Process
+## ✨ Key Highlights
 
-* Combined 12 monthly CSV files into one dataset.
-* Parsed timestamps and created month, weekday, season, and hour features.
-* Cleaned station names and IDs, removed outliers, standardized member_casual labels.
+* Analyzed over a full year of bike share trips to capture seasonal and behavioral patterns
+* Identified clear differences in trip duration, timing, and geography between rider types
+* Quantified weekend and leisure driven usage among casual riders
+* Mapped commuter focused patterns among annual members
+* Translated behavioral insights into concrete business recommendations
 
-## Detailed Findings
+## 🧩 Features
 
-* Members account for 64 percent of all rides; casual riders make up 36 percent.
-* Casual riders take longer trips (23 minutes vs. 12 minutes for members).
-* Weekend riding is much heavier among casual riders (38 percent of their rides) compared to members (23 percent).
-* Member usage peaks during commute windows, while casual riders peak later in the day.
-* Holiday usage remains member-heavy at 63 percent.
-* Members cluster around commuter corridors; casual riders lean toward leisure and tourist areas.
+| Component           | Description                                             | Status   |
+| ------------------- | ------------------------------------------------------- | -------- |
+| Data Aggregation    | Combined 12 monthly trip files into a unified dataset   | Complete |
+| Feature Engineering | Created time based and seasonal features                | Complete |
+| Data Cleaning       | Standardized labels, removed outliers, cleaned stations | Complete |
+| Behavioral Analysis | Compared usage patterns by rider type                   | Complete |
+| Geographic Insights | Analyzed station usage by rider intent                  | Complete |
+| Business Strategy   | Developed conversion focused recommendations            | Complete |
 
-## Strategic Recommendations
+## 🧪 Methodology
 
-1. Create flexible passes: a commuter-focused peak-hour plan and a weekend leisure pass priced for long, casual trips.
-2. High-Value Conversion Promotions : Run seasonal conversion pushes like a Summer Pass or holiday bundles that roll into discounted annual memberships.
-3. Destination-Based Incentives : Partner with attractions, restaurants, and entertainment spots near top casual-rider stations to encourage on-site membership sign-ups.
-4. Duration-Incentive Messaging : Speak directly to long-trip casual riders: highlight how members avoid high per-minute fees. Offer reduced pricing for member trips over 30 minutes to reinforce loyalty.
-5. Geographic and Inventory Optimization : Shift bikes toward leisure hotspots on weekends and holidays. Reinforce commuter routes during weekday peaks to keep both groups satisfied.
+### 1. Data Collection
 
-## Actions
+* Divvy Tripdata from October 2024 to September 2025
+* Monthly CSV files consolidated into a single dataset
 
-1. Launch a weekday commuter offer at top member hubs and track new memberships over the first 60 days.
-2. Run a summer conversion campaign aimed at casual riders who spike on weekends.
-3. Integrate promotions with high-traffic leisure destinations and measure sign-ups driven by these partnerships.
+### 2. Data Processing
 
-## Additional Resources
+* Parsed timestamps into month, weekday, hour, and season
+* Standardized member and casual rider labels
+* Cleaned station names and IDs
+* Removed extreme outliers and invalid records
 
-**Dataset:** [https://divvy-tripdata.s3.amazonaws.com/index.html](https://divvy-tripdata.s3.amazonaws.com/index.html)
+### 3. Analysis
+
+* Compared trip counts and ride duration by rider type
+* Analyzed weekday vs weekend behavior
+* Evaluated hourly usage patterns
+* Examined holiday usage trends
+* Identified geographic clustering of ride activity
+
+### 4. Insight Validation
+
+* Cross checked patterns across time, duration, and geography
+* Focused on repeatable behaviors rather than one off spikes
+
+## 📊 Key Results
+
+### Usage Patterns
+
+* Members account for the majority of total rides, while casual riders represent a significant minority
+* Casual riders take nearly twice as long per trip compared to members
+* Weekend usage is substantially higher for casual riders
+* Member activity peaks during weekday commute hours
+* Casual rider demand peaks later in the day
+
+### Business Implications
+
+* Casual riders behave like leisure and tourism users
+* Members primarily use bikes as part of a commuting routine
+* Pricing and messaging should reflect these fundamentally different use cases
+
+## 🛠️ Technologies
+
+### Tools
+
+| Technology       | Purpose                         |
+| ---------------- | ------------------------------- |
+| SQL              | Data validation and aggregation |
+| Python           | Data cleaning and analysis      |
+| Pandas           | Feature engineering             |
+| NumPy            | Numerical operations            |
+| Matplotlib       | Trend visualization             |
+| Seaborn          | Comparative analysis            |
+| Jupyter Notebook | Analysis workflow               |
+
+### Libraries Used
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
+
+## 🧠 Skills Demonstrated
+
+* Data cleaning and feature engineering at scale
+* Behavioral segmentation analysis
+* Time series and seasonality analysis
+* Translating data insights into business strategy
+* Stakeholder focused recommendation framing
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Python 3.8+
+* Jupyter Notebook
+
+### Usage
+
+```bash
+git clone https://github.com/your-username/cyclistic-bike-share-analysis.git
+cd cyclistic-bike-share-analysis
+jupyter notebook
+```
+
+Run notebooks in sequence to reproduce the analysis.
+
+## 📎 Additional Resources
+
+**Dataset:**
+[https://divvy-tripdata.s3.amazonaws.com/index.html](https://divvy-tripdata.s3.amazonaws.com/index.html)
+
